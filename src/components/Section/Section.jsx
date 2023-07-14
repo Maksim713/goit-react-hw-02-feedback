@@ -1,8 +1,8 @@
-import { Container } from '../Container/Container';
+import Container from '../Container';
 import PropTypes from 'prop-types';
 import css from './Section.module.css';
 
-export const Section = ({ title, children }) => {
+const Section = ({ title, children }) => {
   return (
     <div className={css.container}>
       <Container>
@@ -16,3 +16,5 @@ export const Section = ({ title, children }) => {
 Container.propTypes = {
   title: PropTypes.string,
 };
+
+export default Section;
